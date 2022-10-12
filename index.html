@@ -6,20 +6,76 @@
   <meta name="viewport" content="width=device-width">
   <title>23 Pennies</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src='https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js'></script>
 </head>
 
 <body>
-    <div class="container">
-      <div id ="info"></div>
-      <div id ="pieces"></div>
-      <div id ="buttons">
-        <button onclick="take(1)">1<br>Penny</button>
-        <button onclick="take(2)">2<br>Pennies</button>
-        <button onclick="take(3)">3<br>Pennies</button>
+
+  <!--
+  <span class='warning'>
+    WARNING: ITS BROKEN RIGHT NOW
+  </span>-->
+  <div class="container">
+    <div id='game-ui'>
+      <div id="info"></div>
+      <div id="pieces"></div>
+      <div id="buttons">
+        <button onclick="take(1)" id="btn">Take<br><b>1</b><br>Penny</button>
+        <button onclick="take(2)" id="btn">Take<br><b>2</b><br>Pennies</button>
+        <button onclick="take(3)" id="btn">Take<br><b>3</b><br>Pennies</button>
       </div>
-      <div id="feedback"</div>
+      <div id="feedback"> </div>
     </div>
-  <script src="script.js"></script> 
+    <div id='choose-difficulty'>
+      <h3>Which difficulty would you like to play?</h3>
+      <button onClick='setDifficulty("baby")'>baby</button>
+      <button onclick="setDifficulty('easy')">easy</button>
+      <button onclick="setDifficulty('hard')">bit harder</button>
+      <button onClick='setDifficulty("impossible")'>literally impossible</button+++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+<!--       <button onClick='window.location.href="https://www.youtube.com/embed/xvFZjo5PgG0"'>1gn</button> bruh -->
+    </div>
+  </div>
+  <div id="footer">
+    <span>
+      <a href="https://replit.com/@the-official-dementia-team">Our Replit profile</a> | <a
+        href="https://replit.com/@the-official-dementia-team/23-Pennies?v=1">23 Pennies on Replit</a> | <a href="#"
+        onclick='newGame();'>Click here if page not working </a> | <a href="/aboutUs">About Us</a>
+    </span>
+  </div>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
